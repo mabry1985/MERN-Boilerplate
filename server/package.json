@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "backend": "nodemon app.js",
+    "dev": "concurrently \"yarn backend\" \"cd ../client && yarn start\"" 
+  },
   "dependencies": {
     "concurrently": "^5.0.2",
     "cors": "^2.8.5",
